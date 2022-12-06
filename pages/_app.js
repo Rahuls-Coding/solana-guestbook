@@ -1,20 +1,19 @@
-import "../styles/globals.css";
+import '../styles/globals.css'
 
-import { CssBaseline,GeistProvider } from '@geist-ui/core'
-// import { ThemeProvider } from "next-themes";
+import {Manrope} from '@next/font/google'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+})
+
 
 function MyApp({ Component, pageProps }) {
-  return (
-
-    <GeistProvider>
-      <CssBaseline/>
-        {/* <ThemeProvider defaultTheme="system" attribute="class"> */}
-      <Component {...pageProps} />
-    {/* </ThemeProvider> */}
-    </GeistProvider>
-    
-
-  );
+  return(
+      <main className={manrope.className}>
+        <Component {...pageProps} />
+       </main>
+     
+     )
 }
 
-export default MyApp;
+export default MyApp
