@@ -1,3 +1,3 @@
-# Cox Mill High School Website
+# Solana Guestbook
 
-this will be soon updated
+...
